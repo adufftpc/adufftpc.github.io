@@ -281,6 +281,11 @@ footer {
     font-size: small;
 }
 
+footer a,
+footer a:visited {
+    color: #666;
+}
+
 footer.dark-mode {
     color: #ccc;
 }

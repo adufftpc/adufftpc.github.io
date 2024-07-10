@@ -148,7 +148,7 @@ body.dark-mode {
     font-size: 1.2em;
     /* color: #333; */
     line-height: 2.28;
-    /* border-bottom: 1px solid #c9c9c9; */
+    border-bottom: 1px solid #c9c9c9;
 }
 
 .details h3.dark-mode {
@@ -191,7 +191,7 @@ body.dark-mode {
 }
 
 .sidebar h3 {
-    border-bottom: 1px solid #c9c9c9;
+    /* border-bottom: 1px solid #c9c9c9; */
     padding-bottom: 5px;
     margin-bottom: 1px;
     font-size: 1.2em;
@@ -246,6 +246,32 @@ body.dark-mode {
 .contact-info a.dark-mode:hover {
     color: #33a0ff;
     text-shadow: 0 0 5px rgba(51, 160, 255, 0.5);
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #c0c0c0;
+}
+
+.tag.dark-mode {
+    background-color: #555;
+}
+
+.tag.dark-mode:hover {
+    background-color: #777;
 }
 
 footer {

@@ -1,25 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.3;
+    line-height: 1.4;
     background-color: #f4f4f4;
-    color: #333;
+    color: #444;
     margin: 0;
     padding: 0;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
+    min-width: 718px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container.dark-mode {
+    background-color: #444;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.header-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.download-link a,
+.theme-switcher a {
+    color: #1a73e8; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.download-link a:hover,
+.theme-switcher a:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.download-link a:visited,
+.theme-switcher a:visited {
+    color: #1a73e8;
+}
+
+.download-link a.dark-mode,
+.theme-switcher a.dark-mode {
+    color: #80c1ff;
+}
+
+.download-link a.dark-mode:hover,
+.theme-switcher a.dark-mode:hover {
+    color: #33a0ff;
+    text-shadow: 0 0 5px rgba(51, 160, 255, 0.5);
 }
 
 .profile-picture {
@@ -30,6 +80,7 @@ body {
 .profile-picture img {
     width: 100%;
     border-radius: 3%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .header-info {
@@ -49,6 +100,11 @@ body {
     color: #666;
 }
 
+.header-info h1.dark-mode,
+.header-info h2.dark-mode {
+    color: #ccc;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -63,10 +119,18 @@ body {
 .profile h2,
 .experience h2,
 .education h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 1px solid #c9c9c9;
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-size: 1.5em;
+    color: #444;
+}
+
+.profile h2.dark-mode,
+.experience h2.dark-mode,
+.education h2.dark-mode {
+    color: #eeeeee;
+    border-bottom: 1px solid #767676;
 }
 
 .job h3 {
@@ -75,16 +139,30 @@ body {
     color: #333;
 }
 
+.job h3.dark-mode {
+    color: #ccc;
+}
+
 .details h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
-    color: #333;
-    line-height: 2.13;
+    /* color: #333; */
+    line-height: 2.28;
+    /* border-bottom: 1px solid #c9c9c9; */
+}
+
+.details h3.dark-mode {
+    color: #eeeeee;
+    border-bottom: 1px solid #767676;
 }
 
 .job p {
-    margin: 5px 0;
+    margin: 0 0 5px 0; /* Adjusted margin to remove extra space */
     font-weight: 550;
+}
+
+.completed-proj {
+    margin-top: 0;
 }
 
 .date {
@@ -93,9 +171,14 @@ body {
     font-weight: 550;
 }
 
+.date.dark-mode {
+    color: #ccc;
+}
+
 .job ul {
     list-style: disc;
     padding-left: 20px;
+    /* margin-top: 0; */
 }
 
 .sidebar {
@@ -104,14 +187,20 @@ body {
 }
 
 .sidebar section {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .sidebar h3 {
-    border-bottom: 2px solid #333;
+    border-bottom: 1px solid #c9c9c9;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     font-size: 1.2em;
+    color: #444;
+}
+
+.sidebar h3.dark-mode {
+    border-bottom: 1px solid #767676;
+    color: #eeeeee;
 }
 
 .sidebar ul {
@@ -124,11 +213,48 @@ body {
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.contact-info a:visited {
+    color: #1a73e8; /* Disable visited color change */
+}
+
+.contact-info a.dark-mode {
+    color: #80c1ff;
+}
+
+.contact-info a.dark-mode:hover {
+    color: #33a0ff;
+    text-shadow: 0 0 5px rgba(51, 160, 255, 0.5);
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     color: #666;
+    font-size: small;
+}
+
+footer.dark-mode {
+    color: #ccc;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrey Loshchilov - HW Engineer / Tech Lead</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,16 @@
                 </div>
                 <div class="header-info">
                     <h1>Andrey Loshchilov</h1>
-                    <h2>HW Engineer / Tech Lead</h2>
+                    <h2>Embedded Engineer / Tech Lead</h2>
+                </div>
+                <div class="header-links">
+                    <div class="download-link">
+                        <!-- <a href="https://drive.google.com/file/d/1aSKOk_6l-UNsj-PMJ0Xq6HTt5ud5Xvcn/view?usp=drive_link" target="_blank">Print version (PDF)</a><br> -->
+                        <a href="files/Andrey-Loshchilov-Embedded-Engineer-CV.pdf" target="_blank">Print version (PDF)</a><br>
+                    </div>
+                    <!-- <div class="theme-switcher">ß
+                        <a href="#" id="theme-toggle">Dark Mode</a>
+                    </div> -->
                 </div>
             </div>
         </header>
@@ -23,7 +33,7 @@
             <div class="main-section">
                 <section class="profile">
                     <h2>Profile</h2>
-                    <p>Experienced HW Engineer with 3+ years in Embedded development, 7+ years of experience in Automated Production Test Systems architecture design and developing, soldering skills.</p>
+                    <p>Experienced Embedded Engineer with <span id="experience-embedded">&nbsp;</span> years in Embedded development, 7+ years of experience in Automated Production Test Systems architecture design and developing, soldering skills.</p>
                     <p>Skills and technologies, I work with:</p>
                     <ul>
                         <li>C/C++, Python</li>
@@ -45,7 +55,7 @@
                             <li>Schematic diagrams analysis</li>
                         </ul>
                         <p>Completed projects:</p>
-                        <ul>
+                        <ul class="completed-proj">
                             <li>Bluetooth media controller FW</li>
                             <li>Audio Modules monitoring suite FW</li>
                             <li>Firmware for LTE Modem and Navigation Receiver interfacing controller</li>
@@ -66,7 +76,7 @@
                             <li>Diagnostic and investigation of failed devices, modules, components, and parts</li>
                         </ul>
                         <p>Completed projects:</p>
-                        <ul>
+                        <ul class="completed-proj">
                             <li>Debug access API for LEON CPU (UART, JTAG)</li>
                             <li>GNSS Simulator System (Control and monitoring, signal distribution network), providing enhanced repeatability of RF Tests</li>
                             <li>Complete software set for STM32MP1 based test adapter (U-Boot, Linux, User-level software, and periphery drivers)</li>
@@ -120,20 +130,23 @@
             <aside class="sidebar">
                 <section class="details">
                     <h3>Details</h3>
-                    <p>Nizhny Novgorod, Russia</p>
-                    <p>Date of birth: 20.02.1990, 34 y.o.</p>
+                    <!-- <p>Nizhny Novgorod, Russia</p> -->
+                    <p>Date of birth: 1990 Feb 20, <span id="age">&nbsp;</span></p>
                     <div class="contact-info">
-                        <p>Email: <a href="mailto:aduff@ya.ru">aduff@ya.ru</a></p>
-                        <p>Telegram: <a href="https://t.me/aduff" target="_blank">@aduff</a></p>
-                        <p>GitHub: <a href="https://github.com/adufftpc" target="_blank">github.com/adufftpc</a></p>
-                        <p>GitLab: <a href="https://gitlab.com/aduff" target="_blank">gitlab.com/aduff</a></p>
+                        <p>
+                            <img src="img/icons8-telegram-24.png" class="contact-icon"> <a href="https://t.me/aduff" target="_blank">@aduff</a>
+                            <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            <img src="img/icons8-email-24.png" class="contact-icon"> <a href="mailto:aduff@ya.ru">aduff@ya.ru</a>
+                        </p>
+                        <img src="img/icons8-github-24.png" class="contact-icon"> <a href="https://github.com/adufftpc" target="_blank">github.com/adufftpc</a></p>
+                        <!-- <p>GitLab: <a href="https://gitlab.com/aduff" target="_blank">gitlab.com/aduff</a></p> -->
                     </div>
                 </section>
                 <section class="skills-additional">
                     <h3>Skills</h3>
                     <ul>
                         <li>Teamwork</li>
-                        <li>Readiness for local/international business trips</li>
+                        <li>Ready for local/international business trips</li>
                         <li>Ability to Work Under Pressure</li>
                         <li>Soldering</li>
                         <li>Diagnostic</li>
@@ -146,23 +159,20 @@
                 </section>
                 <section class="languages">
                     <h3>Languages</h3>
-                    <p>English</p>
+                    <p>Russian, English</p>
                 </section>
                 <section class="hobbies">
                     <h3>Hobbies</h3>
                     <ul>
-                        <li>Cycling</li>
-                        <li>Skateboarding</li>
-                        <li>Hiking</li>
-                        <li>Ultimate Frisbee</li>
+                        <li>Cycling, Skateboarding</li>
+                        <li>Hiking, Ultimate Frisbee</li>
                         <li>Playing guitar</li>
                     </ul>
                 </section>
             </aside>
         </div>
-        <footer>
-            <p>&copy; 2024 Andrey Loshchilov. All rights reserved.</p>
-        </footer>
     </div>
+    <footer>
+        <p>&copy; 2024 Andrey Loshchilov</p>
+    </footer>
 </body>
-</html>

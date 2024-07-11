@@ -111,6 +111,14 @@ body.dark-mode {
     gap: 20px;
 }
 
+.section-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 6px;
+}
+
 .main-section {
     display: flex;
     flex-direction: column;
